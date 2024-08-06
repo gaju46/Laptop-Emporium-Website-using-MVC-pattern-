@@ -1,0 +1,108 @@
+@charset "ISO-8859-1";
+body {
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0; 
+    background-color: #4942cf;
+    background-image: url('images/hh.jpg');  
+    background-size: cover;  
+    background-position: center;  
+    background-repeat: no-repeat;  
+}
+
+.top-left-greeting {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px; 
+    background: linear-gradient(135deg, #d82929, #272acf); 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    color: #ffffff; 
+    font-size: 1.5em; 
+    font-weight: bold; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease; 
+}
+
+.top-left-greeting:hover {
+    transform: scale(1.05); 
+    background: linear-gradient(135deg, #feb47b, #ff7e5f); 
+    cursor: pointer; 
+}
+
+.main-container {
+    display: flex;  
+    justify-content: space-between;  
+    padding: 20px;  
+    margin-top: 100px;  
+}
+
+.left-section, .middle-section, .right-section {
+    border: 1px solid #ccc;  
+    padding: 20px;  
+    border-radius: 10px;  
+    background-color: #f9f9f9;  
+}
+
+.left-section {
+    width: 8%; 
+    border: 1px solid #ccc;  
+    padding: 20px;  
+    border-radius: 10px;  
+    background-color: #f9f9f9;  
+} 
+
+.middle-section {
+    width: 40%;  
+}
+
+.right-section {
+    width: 12%;  
+}
+
+.right-section h2 {
+    color: rgb(150, 1, 1);
+}
+
+.left-section h2 {
+    margin-bottom: 60px;
+    color: rgb(88, 0, 0);
+}
+
+.left-section h3, 
+.left-section h4, 
+.left-section h5, 
+.left-section h6 {
+    font-size: 16px;
+}
+
+.middle-section h1 {
+    font-size: 15px;
+    color: rgb(138, 0, 0);
+}
+
+.heading-with-image {
+    display: flex;  
+    align-items: center;  
+    margin-bottom: 10px;  
+}
+
+.heading-with-image img {
+    width: 20px;  
+    height: 20px;  
+    margin-right: 10px;  
+}
+
+.shipping-address {
+    color: rgb(140, 3, 3);  
+}
+
+.edit {
+    color: rgb(0, 168, 194);  
+    cursor: pointer;  
+}
+
+.editt {
+    color: rgb(0, 163, 188);
+}

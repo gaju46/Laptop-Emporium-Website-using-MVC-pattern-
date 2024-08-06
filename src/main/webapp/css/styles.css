@@ -1,0 +1,499 @@
+@charset "ISO-8859-1";
+
+
+
+.banner
+{
+    position: relative;
+}
+
+.banner img
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.banner-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; 
+}
+
+.banner-text h1 {
+    font-size: 45px; 
+    margin-bottom: 20px; 
+}
+
+.banner-text p {
+    font-size: 27px; 
+    margin-bottom: 20px; 
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722; 
+    color: white; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    
+}
+
+.button:hover {
+    background-color: #f44336; 
+}
+
+.button i {
+    margin-left: 5px; 
+}
+
+.browse
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.browse h2
+{
+    font-size: 30px;
+}
+
+.browse p
+{
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+
+.category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.category-link {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.category-link:hover {
+    transform: translateY(-5px); /* Add a slight upward lift effect on hover */
+}
+
+.category-link img, .category-link h2 {
+    width: 140px; /* Adjust the width of the category image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid transparent; /* Add border to images */
+    border-radius: 50%; /* Make images circular */
+    transition: border-color 0.3s ease;
+}
+
+.category-link span {
+    display: block;
+    margin-top: 5px; /* Adjust spacing between image and text */
+    font-size: 20px;
+}
+
+.category-link img:hover {
+    border-color: #ff5722; /* Change border color on hover */
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product {
+    width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.product-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.product-image:hover img {
+    transform: rotateY(180deg);
+}
+
+.product-specs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.5s;
+}
+
+.product-image:hover  .product-specs {
+    transform: rotateY(0deg);
+    visibility: visible;
+}
+
+.product-specs h2
+{
+    margin-bottom: 15px;
+}
+
+.product-specs p
+{
+    margin-bottom: 5px;
+}
+
+.product-specs p span
+{
+    font-weight: bold;
+}
+
+.product-details {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.product-details h3 {
+    font-size: 19px;
+}
+
+.product-details p {
+    margin: 22px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1e3345;
+}
+
+.add-to-cart {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.add-to-cart .fas.fa-shopping-cart {
+    margin-left: 5px;
+}
+
+.add-to-cart:hover {
+    background-color: #f44336;
+}
+
+
+
+
+
+
+
+.main-container {
+    width: 400px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+        
+        body
+        {
+        background-color: #ffffff;
+        font-family: sans-serif;
+        }
+
+        .nav-container 
+        {
+            background-color: #153651; /* Background color of the navigation bar */
+            padding: 15px 25px; /* Padding around the navigation bar */
+        }
+
+        .circle 
+        {
+            width: 60px; /* Diameter of the circle */
+            height: 60px; /* Diameter of the circle */
+            border-radius: 50%; /* Shape the div into a circle */
+            background-color: #d7e4ef; /* Background color of the circle */
+        }
+
+        nav 
+        {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .nav-pages ul 
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-pages ul li 
+        {
+            display: inline;
+            padding: 0px 40px;
+        }
+
+        .nav-pages ul li a 
+        {
+            color:#d7e4ef; /* Color of the menu links */
+            text-decoration: none;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-pages ul li a:hover 
+        {
+            color: #ff5722;
+            transition: color 0.3s ease;
+        }
+
+        .search-container
+        {
+            padding: 10px;
+        }
+
+        .search-container input[type="search"]
+        {
+            padding: 15px;
+            width: 350px; 
+            height: 35px;
+            border: none;
+            border-radius: 20px;
+            background-color: #a8b7c3;
+            font-weight: bold;
+        }
+
+        .search-container .fas.fa-search
+        {
+            font-size: 20px;
+            margin-left: 10px;
+            color: #d7e4ef;
+            transition: transform 0.3s;
+        }
+
+        .search-container .fas.fa-search:hover
+        {
+            transform: scale(0.9);
+            transition: transform 0.3s;
+            color: #ff5722;
+        }
+
+
+        .user-and-cart .fas.fa-shopping-cart, .fas.fa-user
+        {
+            font-size: 23px;
+            color: #d7e4ef;
+            transition: transform 0.3s;
+        }
+
+        .user-and-cart .fas.fa-shopping-cart, .fas.fa-user
+        {
+            margin-right: 28px;
+        }
+
+        .user-and-cart .fas.fa-shopping-cart:hover, .fas.fa-user:hover
+        {
+            transform: scale(0.9);
+            transition: transform 0.3s;
+            color: #ff5722;
+        }
+
+        .login-button
+        {
+            background-color: #ff5722;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 25px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
+
+        .login-button:hover 
+        {
+            background-color: #f44336;
+        }
+
+
+        .footer-container
+        {
+            background-color: #153651;
+            text-align: center;
+        }
+
+        .social-icons
+        {
+            padding: 25px 0px;
+        }
+
+        .social-icons .fab.fa-facebook-f, .fab.fa-instagram, .fab.fa-twitter
+        {
+            font-size: 45px;
+            color: #f9f9f9;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons .fab.fa-facebook-f:hover, .fab.fa-instagram:hover, .fab.fa-twitter:hover
+        {
+            color: #f44336;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons .fab.fa-instagram
+        {
+            margin: 0px 40px;
+        }
+
+        .footer-container p
+        {
+            color: #d7e4ef;
+        }
+
+        .call-mail 
+        {
+            margin: 20px 0px;
+        }
+
+        .call-mail a
+        {
+            text-decoration: none;
+        }
+
+        .call-mail p
+        {
+            display: inline;
+            padding: 0px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .call-mail p:hover
+        {
+            color: #f44336;
+            transition: color 0.3s ease;
+        }
+
+        .circle-container
+        {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-circle
+        {
+            width: 55px; /* Diameter of the circle */
+            height: 55px; /* Diameter of the circle */
+            border-radius: 50%; /* Shape the div into a circle */
+            background-color: #d7e4ef; /* Background color of the circle */
+        }
+        
+        
+        
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-container {
+        	margin-left: 100px;
+        	margin-right: 100px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            flex: 1;
+            text-align: center;
+            padding: 15px;
+            margin: 10px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+        .card img {
+            width: 250px;
+            height: 250px;
+            border-radius: 15%;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            background-color: #e0e0e0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            padding-top: 20px;
+        }
+
+        .logout-form {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logout-form button {
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .logout-form button:hover {
+            background-color: #c0392b;
+        }

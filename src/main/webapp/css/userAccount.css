@@ -1,0 +1,158 @@
+@charset "ISO-8859-1";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up body styles */
+body {
+    background-image: url("background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    backdrop-filter: blur(3px);
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: linear-gradient(120deg, #4a148c, #ff5722);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 450px;
+    color: #fff; /* Setting text color to white for better contrast */
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff; 
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.col {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.col:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-weight: bold;
+    color: #fff; /* Text color for labels */
+}
+
+input,
+select {
+    width: 180px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.8); /* Background color for input fields */
+    color: #333; /* Text color for input fields */
+}
+
+/* Button styles */
+.button {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6200ea; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3d007f; /* Button background color on hover */
+}
+
+.toggle-page{
+        background-color: rgb(141, 159, 222);
+        border-radius: 20px;
+        margin-bottom: 25px;
+        border-bottom: 3px solid #ccc;
+        border-top: 3px solid #ccc;
+        margin-right: 35px;
+        margin-left: 35px;
+        padding:5px;
+        text-align: center;
+    }
+    .toggle-page a{
+        border: none;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 16px;
+        padding-top: 6px;
+        padding-bottom: 9px;
+        padding-left: 25px;
+        border-radius: 30px;
+        transition: 1s;
+        font-weight: bold;
+        
+    }
+
+    .toggle-page a:hover{
+        background-color: rgba(245, 245, 255, 0.8);
+    }
+    .active{
+        background-color: rgba(245, 245, 255, 0.8);
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.2);
+    }
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+#retypePassword{
+    width: 180px;
+}
+
+.login-page
+{
+
+    .col label{
+        margin-left: 30px;
+    }
+    #username{
+        margin-left: 30px;
+        width: 80%;
+}
+    #password{
+        margin-left: 30px;
+        width: 80%;
+}
+}
+
+.errorStyle{
+color:red;
+}
